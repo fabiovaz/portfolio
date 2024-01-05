@@ -124,8 +124,16 @@ onMounted(() => {
       </div>
     </div>
     <div class="-z-10 absolute w-full h-full background">
-      <img :src="currentSlide.attributes.cover.data.attributes.url" class="animate-crtImage absolute w-full h-full object-cover">
-      <img :src="currentSlide.attributes.cover.data.attributes.url" class="job animate-crtImageGlitch absolute w-full h-full object-cover">
+      <NuxtImg
+        :src="currentSlide.attributes.cover.data.attributes.provider_metadata.public_id"
+        sizes="lg:1920px md:420px"
+        class="animate-crtImage absolute w-full h-full object-cover"
+      />
+      <NuxtImg
+      :src="currentSlide.attributes.cover.data.attributes.provider_metadata.public_id"
+        sizes="lg:1920px md:420px"
+        class="job animate-crtImageGlitch absolute w-full h-full object-cover"
+      />
     </div>
   </section>
   <div id="paginator" class="z-10 absolute right-4 bottom-4 lg:right-10 lg:bottom-10 text-xs text-white/50">
