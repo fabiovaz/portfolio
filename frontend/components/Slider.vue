@@ -96,7 +96,7 @@ onMounted(() => {
 <template>
   <section id="job" class="flex absolute w-full h-full overflow-hidden items-center">
     <div class="hidden">
-      <NuxtImg v-for="image in jobs" :src="image.attributes.cover.data.attributes.provider_metadata.public_id" sizes="lg:1920px md:420px" loading="lazy" />
+      <NuxtImg v-for="image in jobs" :src="image.attributes.cover.data.attributes.provider_metadata.public_id" sizes="lg:1920px md:420px" />
     </div>
     <div id="caption" class="z-10 px-4 lg:px-0 cursor-pointer container max-w-6xl mx-auto" @click.prevent="joinSlide(`/works/${currentSlide.attributes.slug}`)">
       <div class="relative title text-6xl lg:text-7xl uppercase font-oswald font-bold">
