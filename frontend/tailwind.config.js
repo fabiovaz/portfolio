@@ -11,6 +11,9 @@ export default {
     "./error.vue",
   ],
   theme: {
+    container: {
+      center: true,
+    },
     transitionDuration: {
       DEFAULT: '500ms'
     },

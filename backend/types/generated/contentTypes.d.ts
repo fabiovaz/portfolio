@@ -421,12 +421,6 @@ export interface ApiJobJob extends Schema.CollectionType {
           localized: false;
         };
       }>;
-    year: Attribute.Integer &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
     featured: Attribute.Boolean &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -434,6 +428,15 @@ export interface ApiJobJob extends Schema.CollectionType {
         };
       }> &
       Attribute.DefaultTo<false>;
+    year: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }> &
+      Attribute.SetMinMaxLength<{
+        maxLength: 4;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

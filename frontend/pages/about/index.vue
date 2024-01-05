@@ -3,8 +3,9 @@ useHead({ title: 'Fabio Vaz · About' })
 </script>
 
 <template>
-  <main class="relative z-10 pt-44 pb-16">
-    <div class="max-w-lg mx-auto text-center">
+  <main class="relative pt-44 pb-16 px-4 z-20 container max-w-lg">
+  <!-- <main class="relative z-10 pt-44 pb-16"> -->
+    <div class="text-center">
       <h3 class="text-2xl">HI! I'M</h3>
       <h1 class="text-7xl font-oswald font-bold">FABIO VAZ</h1>
       <h3 class="text-2xl">Full Stack Developer</h3>

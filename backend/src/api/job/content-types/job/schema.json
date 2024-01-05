@@ -86,14 +86,6 @@
         }
       }
     },
-    "year": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "integer"
-    },
     "featured": {
       "pluginOptions": {
         "i18n": {
@@ -102,6 +94,15 @@
       },
       "type": "boolean",
       "default": false
+    },
+    "year": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "maxLength": 4
     }
   }
 }

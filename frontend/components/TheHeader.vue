@@ -3,7 +3,7 @@
     <NuxtLink to="/">
       <img src="/img/logo.svg" />
     </NuxtLink>
-    <nav class="font-oswald text-lg text-white/50 space-x-4 uppercase">
+    <nav class="font-oswald text-lg text-white/50 space-x-4 uppercase sepia">
       <NuxtLink to="/" class="hover:text-white transition-all">
         Home
       </NuxtLink>
@@ -16,3 +16,9 @@
     </nav>
   </header>
 </template>
+
+<style>
+.router-link-active {
+  @apply text-white text-shadow shadow-white/30
+}
+</style>
