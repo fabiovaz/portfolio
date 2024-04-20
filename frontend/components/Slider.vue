@@ -126,7 +126,7 @@ onMounted(() => {
         <div id="timer" class="w-full h-0.5 bg-white" />
       </div>
     </div>
-    <div class="-z-10 absolute w-full h-full background">
+    <div class="-z-10 absolute w-full h-full grayscale background">
       <NuxtImg
         :src="currentSlide.attributes.cover.data.attributes.provider_metadata.public_id"
         sizes="lg:1920px md:420px"
