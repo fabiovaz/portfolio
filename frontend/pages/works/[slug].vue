@@ -15,7 +15,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <main v-if="job" class="py-44 relative z-20 container max-w-6xl mx-auto">
+  <main v-if="job" class="py-44 px-4 relative z-20 container max-w-6xl mx-auto">
     <h1 class="text-7xl uppercase font-oswald font-bold">{{ job.data[0].attributes.title }}</h1>
     <h6 class="mt-4 font-oswald uppercase">{{ job.data[0].attributes.subtitle }}</h6>
     <NuxtLink v-if="job.data[0].attributes.url" :to="job.data[0].attributes.url" target="_blank" class="mt-6 inline-block px-4 py-2 border cursor-pointer hover:bg-white hover:text-black transition-all">
