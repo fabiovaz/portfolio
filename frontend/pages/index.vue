@@ -1,5 +1,5 @@
 <script setup>
-const { data: jobs } = await useFetch(`${import.meta.env.VITE_API_URL}/jobs?populate=cover`, { server: false })
+const { data: jobs } = await useFetch(`${import.meta.env.VITE_API_URL}/jobs?filters[featured]=true&populate=cover`, { server: false })
 </script>
 
 <template>
