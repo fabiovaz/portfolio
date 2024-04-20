@@ -11,3 +11,9 @@ body {
     @apply text-white
   }
 }
+
+@layer components {
+  .link {
+    @apply font-bold underline decoration-teal-500 hover:decoration-white;
+  }
+}
